@@ -1,177 +1,119 @@
+* {
+  margin: 0;
+  padding: 0%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
 html {
   font-size: 80%;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Quicksand", sans-serif;
-}
-
-.calendar,
-section {
+body {
+  width: 100%;
+  height: 120vh;
+  background-color:burlywood;
   display: flex;
-  background-color:azure;
-  max-width: 50rem;
+  justify-content: center;
+  align-items: center;
 }
-.day{
-  border-block-start-style: dotted yellow;
+.container {
+  width: 46em;
+  background-color:chocolate;
+  box-shadow: 0 0.5rem 1rem rgba(0,255,0,0.3);} 
+
+.month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.fad fa-arrow-alt-left{
+  color: blue;
+}
+.month h1 {
+  margin: 0 20px;
+  width: 200px;
+  text-align: center;
+}
+.month i {
+  cursor: pointer;
+  padding: 20px;
 }
 .day {
-  width: 1.5em;
-  background-color:skyblue;
-  height: 1.5em;
-}
-
-.calendar2021.jan{
-  color: white;
-  background-color: yellow;
-  border-radius: 0%;
-}
-
-.day:nth-of-type(7n+1) {
-  color:white;
-}
-
-.to.day {
-  color: white;
-  background: yellowgreen;
-  border-radius: 0%;
-}
-
-.month {
   display: flex;
-  width: calc(1.5em * 7);
-  padding: 1em;
-}
-
-h4 {
-  background-color:tomato;
-  font-size: 1em;
-  text-transform: uppercase;
-  color:sienna;
-}
-.no-flexbox .day {
-  text-align: center;
-  float: left;
-  line-height: 1.5em;
-}
-
-.no-flexbox h4 {
-  text-align: center;
-}
-
-.no-flexbox h1 {
-  width: 4em;
-}
-.amralt{
-  background: red;
-  border-radius: 0%;
-  color: white;
-}
-
-body,
-body * {
-  display: flex;
-  justify-content: center;
-}
-
-h4 {
-  justify-content: center;
-  flex: 1 0 100%;
-}
-
-h1 {
-  justify-content: center;
-  align-self: stretch;
-}
-
-.calendar,
-.month {
   flex-wrap: wrap;
 }
-
-section {
-  flex-direction: column;
-  align-self: center;
-}
-
-.month {
-  align-items: flex-start;
-}
-
-.day {
-  align-items: center;
+.day div {
+  width: calc(46rem / 7);
+  height: 5rem;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  color: rgb(226, 226, 226);
 }
-.container{
-  width: 630px;
-  height: 60px;
-  border: 3px solid black;
-  position: relative;
+.week-day {
+  display: flex;
 }
-.box-1{
-  background-color: red;
-  border: 1px solid black;
+.week-day div {
+  width: calc(46rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: rgb(226, 226, 226);
 }
-.box-2{
-  background-color:deepskyblue;
-  border: 1px solid black;
+.day div:not(.week-day):hover {
+  cursor: pointer;
+  border: 1px solid palevioletred;
 }
-.box-3{
-  background-color:gold;
-  border: 1px solid black;
-  }
-.box-4{
-  background-color:greenyellow;
-  border: 1px solid black;
+.event {
+  border: 1px solid pink;
 }
-.box-5{
-  background-color:turquoise;
-  border: 1px solid black;
-}
-.box-6{
-  background-color:hotpink;
-  border: 1px solid black;
-}
-.h1{
-  justify-content: left;
-  margin: 10px;
-  background-color: springgreen;
-}
-.hehe{
+.listed-events {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid black;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: large;
+  color:white;
+  padding: 10px 50px 10px 50px;
 }
-.hehe:nth-child(even){
-  background-color: teal;
+.currentMonth {
+  color: rgba(255, 255, 255, 1);
 }
-.hehe:nth-child(odd){
-  background-color:yellow;
+.event-header {
+  padding-top: 10px;
+  color:whitesmoke;
+  text-align: center;
 }
-.hoho{
+.events {
+  background-color:orangered;
+}
+.search {
+  display: flex;
   flex-direction: column;
-  border-top: 1px solid black;
+  align-items: center;
+  padding-bottom: 10px;
 }
-.hoho:nth-child(even){
-  background-color:slategrey;
+.search h3 {
+  color: white;
 }
-.hoho:nth-child(odd){
-  background-color:violet;
-}
-.haha{
+.result {
+  display: flex;
+  width: 636px;
   flex-direction: column;
-  border-top: 1px solid black;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: large;
+  color: white;
 }
-.haha:nth-child(even){
-  background-color:aqua;
+.search-input {
+  padding: 5px;
+  margin: 10px 0 5px 0;
 }
-.haha:nth-child(odd){
-  background-color:pink;
+.search-result h3 {
+  text-align: center;
 }
-
-
-
-
-
