@@ -1,0 +1,22 @@
+.button-container {
+  background-color: chocolate;
+  text-align: center;
+}
+.button-container button {
+  cursor: pointer;
+  margin: 1rem;
+  border: none;
+  padding: 0.7rem 1rem;
+  background-color: aqua;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  text-decoration: none;
+  transition-duration: 200ms;
+  
+}
+.button-container button:hover {
+  background-color: tan;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

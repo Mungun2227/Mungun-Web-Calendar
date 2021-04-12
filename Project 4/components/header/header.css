@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: chocolate;
+  margin: 0;
+  height: 428px;
+}
+.hidden-msg h1 {
+  margin: 0;
+}
+.hidden-msg {
+  z-index: -1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3vh;
+  display: none;
+}
+:root {
+  --original-size-height: 428px;
+  --original-size-width: 1040px;
+}
+.header:hover img {
+  display: none;
+}
+.header:hover .hidden-msg {
+  z-index: 1;
+  display: inline;
+}
