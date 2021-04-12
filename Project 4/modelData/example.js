@@ -16,7 +16,7 @@ if (cs142models === undefined) {
 
 cs142models.exampleModel = function() {
    return {
-      name: 'ICSI302',
+      name: 'Mungun',
       motto: 'Mngn Learning some good thing',
    };
 };
